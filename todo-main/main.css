@@ -1,0 +1,74 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.input_area{
+    background-color: bisque;
+    width:400px;
+    height: 30px;
+    padding:8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.incomplete_area{
+    background-color: darksalmon;
+    width:400px;
+    /* 高さを指定すると、使い勝手が悪くなるため、min-heightのみ指定 */
+    min-height: 200px;
+    padding:8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.complete_area{
+    background-color:cadetblue;
+    width:400px;
+    min-height: 200px;
+    padding:8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+input{
+    border-radius: 16px;
+    border:none;
+    /* input箱のアウトラインは不要 */
+    outline:none;
+    padding:6px 16px;
+}
+
+button{
+    border-radius: 16px;
+    border: none;
+    padding:6px 16px;
+    margin-right: 3px;
+}
+
+/* Hoverした時に、背景色を変更 */
+button:hover{
+    background-color:cornflowerblue;
+    color: #fff;
+    /* 分かりやすいポインタに変更 */
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color:antiquewhite;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.list_row{
+    /* 縦の項目を横に並ぶ */
+    display: flex;
+    /* フレックスアイテムのマージンボックスは、交差軸上の中央に配置されます。アイテムの cross-size がフレックスコンテナより大きい場合は、両方向へ均等にはみ出します。 */
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+li{
+    margin-right: 8px;
+}
+
